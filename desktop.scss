@@ -1,0 +1,342 @@
+/*feuille de style desktop min width 1200px*/
+
+$colors: (
+  bleu: #38d0ab,
+  grey: #707070,
+  dark-green: #224127,
+  medium-green: #219e13,
+  lighter-green: #e0f7c9,
+  white: #ffffff,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@media (min-width: 1200px){
+    body {
+        font-family: Segoe UI;
+        margin: 0;
+    }
+    .contenaire {
+    width: 80%;
+    max-width: 100%;
+    margin: auto;
+    }
+
+     /* HEADER */
+  .header-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 25em;
+
+    h3 {
+      margin-left: 2.2em;
+      margin-bottom: 0;
+      font-weight: normal;
+      margin-top: 2em;
+    }
+
+    p {
+      text-align: left;
+      font-weight: normal;
+      width: 60%;
+      margin-left: 6em;
+      margin-top: 0.5em;
+    }
+    .logo {
+      margin-left: 0;
+      img {
+        margin-bottom: 0.5em;
+      }
+      .thegarden {
+        display: none;
+      }
+    }
+  }
+
+  .cher-client {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 3em;
+    .client {
+      display: block;
+    }
+    .site {
+      color: color(bleu);
+    }
+  }
+
+  /* truc et astuce */
+  .truc-astuce {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    :nth-child(3) {
+      order: 3;
+    }
+    :nth-child(1) {
+      order: 2;
+    }
+    .tips {
+      h2 {
+        font-size: 1.9em;
+        margin-left: 1em;
+        margin-top: 3em;
+      }
+      img {
+        margin-top: 8em;
+        margin-left: 1em;
+        transform: rotate(-90deg);
+      }
+    }
+    .potager {
+      padding-bottom: 10%;
+      img {
+        margin-top: 3em;
+        margin-left: 8em;
+      }
+      h2 {
+        font-size: 1.4em;
+        text-align: center;
+        margin-left: 0;
+      }
+      p {
+        font-size: 1.1em;
+        color: grey;
+        margin-left: 1em;
+        width: 90%;
+      }
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: color(bleu);
+        margin-left: 19em;
+      }
+    }
+    .idées {
+      padding-bottom: 0;
+      margin-bottom: 6em;
+      img {
+        margin-left: 10em;
+      }
+      h2 {
+        font-size: 1.4em;
+        text-align: center;
+        margin-left: 0;
+      }
+      p {
+        font-size: 1.1em;
+        color: grey;
+        margin-left: 1em;
+        width: 90%;
+        margin-bottom: 0;
+      }
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: color(bleu);
+        margin-left: 19em;
+      }
+    }
+  }  
+  .bonhomme {
+    display: block;
+    width: 90%;
+    margin-left: 8em;
+  }
+   /*partie Emilie*/
+/* section promotion de la tondeuse*/ 
+
+.promo{
+  position: relative;
+    h2{
+      position: absolute;
+      right: 0;
+      left: 0;
+      font-size: 2em;      
+    }
+    .garantie{
+      position: absolute;      
+      top: 13%;
+      left: 62%;
+      width: 15%;      
+    }
+    .items-tendes{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+
+      /*cards de gauche*/
+        .tendese-wrapper{
+          width: 70%;
+          margin-top: 75px;
+          .prix{            
+            margin-top: 5em;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 40%;
+            position: relative;
+              hr{
+                top:41%;
+                width: 50%;
+              }
+              h1 {
+                order: 1;
+                margin-left: 0;
+                font-size: 2em;
+              }
+              h2 {
+                order:2;
+                position: initial;                             
+              }
+              h3 {
+                order: 3;
+                font-size: 2.5em;
+              }
+          } /*fermeture de prix*/
+          img {
+            width: 100%
+          }
+        } /*fermeture de tendese-wrapper*/
+
+      /*cards de droite*/
+      .icones {
+        display: block;
+        display: flex;
+        align-items: center;
+
+          .icones-items {
+            display: flex;
+            flex-direction: column;
+            width:15%;
+            gap: 20px;      
+            img {
+                display: flex;
+                padding-left: 2em;
+                width: 45%;
+                margin-top: 2em;
+                margin-right: 0;
+            } 
+          } /*fermeture de icones-items*/
+
+          ul {
+            color: color(grey);
+            font-size: 1.5em;
+            li {
+              list-style: none;
+              margin-top: 2em;
+            }
+          } /*fermeture de l'ul*/
+      } /*fermeture de icones*/
+
+    }/*fermeture de items-tendes*/
+      .btn {
+        background-color: color(bleu);
+        font-size: 1.5em;
+        padding: 0.3em 4em;
+        color: white;
+        border-radius: 30em;
+        text-decoration: none;        
+        position: absolute;
+        right: 150px;
+        bottom: 180px;
+      }
+      .homme{
+        display: initial;
+        width: 50%;
+        margin-left: 50%;
+      }
+      .pelouz{
+        display: none;
+      }    
+  } /*fermeture de promo*/
+      
+    /*section carte de fidélité*/
+  .carte-wrapper {
+      width: 80%;
+      margin: auto;
+      position: relative;
+            p{
+                text-align: center;
+            }
+            .pourcentage{
+                div h1{
+                text-align: center;
+                }
+            }
+            .toutes{
+                position: absolute;
+                right: 70px;
+                top: 180px;
+                width: 370px;
+            }
+            img{
+                display: block;
+                margin: auto;
+                width: 80%;
+            }
+            .recomp{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+                .grace{
+                    display: block;
+                }
+
+                a{
+                    padding: 0.5% 10%;
+                    text-align: center;
+                    width: 350px;
+                }
+      } /*fermeture de carte-wrapper*/
+
+    /*section avantages d'avoir une carte*/
+    .fidelité{
+        h1{
+            text-align: center;
+            margin-left: 0;
+        }
+        li{
+            text-align: center;
+        }
+        img{
+            display: block;
+            width: 80%;
+            margin: auto;
+            image-orientation: 90deg flip;
+          }
+    }    
+    /*footer*/
+  footer{
+        padding-bottom: 3%;
+        padding-top: 3%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .reseaux-socio{
+            position: initial;
+            order: 1;
+                a{
+                  margin-right: 30px;
+                }
+        }
+
+        ul{
+            order: 2;
+        }
+
+        .contenu{
+            order: 3;
+        }
+        .desa{
+            order: 4;
+        }
+  }
+}

@@ -1,0 +1,324 @@
+@charset "UTF-8";
+/*feuille de style desktop min width 1200px*/
+@media (min-width: 1200px) {
+  body {
+    font-family: Segoe UI;
+    margin: 0;
+  }
+
+  .contenaire {
+    width: 80%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  /* HEADER */
+  .header-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 25em;
+  }
+  .header-items h3 {
+    margin-left: 2.2em;
+    margin-bottom: 0;
+    font-weight: normal;
+    margin-top: 2em;
+  }
+  .header-items p {
+    text-align: left;
+    font-weight: normal;
+    width: 60%;
+    margin-left: 6em;
+    margin-top: 0.5em;
+  }
+  .header-items .logo {
+    margin-left: 0;
+  }
+  .header-items .logo img {
+    margin-bottom: 0.5em;
+  }
+  .header-items .logo .thegarden {
+    display: none;
+  }
+
+  .cher-client {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 3em;
+  }
+  .cher-client .client {
+    display: block;
+  }
+  .cher-client .site {
+    color: #38d0ab;
+  }
+
+  /* truc et astuce */
+  .truc-astuce {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .truc-astuce :nth-child(3) {
+    order: 3;
+  }
+  .truc-astuce :nth-child(1) {
+    order: 2;
+  }
+  .truc-astuce .tips h2 {
+    font-size: 1.9em;
+    margin-left: 1em;
+    margin-top: 3em;
+  }
+  .truc-astuce .tips img {
+    margin-top: 8em;
+    margin-left: 1em;
+    transform: rotate(-90deg);
+  }
+  .truc-astuce .potager {
+    padding-bottom: 10%;
+  }
+  .truc-astuce .potager img {
+    margin-top: 3em;
+    margin-left: 8em;
+  }
+  .truc-astuce .potager h2 {
+    font-size: 1.4em;
+    text-align: center;
+    margin-left: 0;
+  }
+  .truc-astuce .potager p {
+    font-size: 1.1em;
+    color: grey;
+    margin-left: 1em;
+    width: 90%;
+  }
+  .truc-astuce .potager a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #38d0ab;
+    margin-left: 19em;
+  }
+  .truc-astuce .idées {
+    padding-bottom: 0;
+    margin-bottom: 6em;
+  }
+  .truc-astuce .idées img {
+    margin-left: 10em;
+  }
+  .truc-astuce .idées h2 {
+    font-size: 1.4em;
+    text-align: center;
+    margin-left: 0;
+  }
+  .truc-astuce .idées p {
+    font-size: 1.1em;
+    color: grey;
+    margin-left: 1em;
+    width: 90%;
+    margin-bottom: 0;
+  }
+  .truc-astuce .idées a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #38d0ab;
+    margin-left: 19em;
+  }
+
+  .bonhomme {
+    display: block;
+    width: 90%;
+    margin-left: 8em;
+  }
+
+  /*partie Emilie*/
+  /* section promotion de la tondeuse*/
+  .promo {
+    position: relative;
+    /*fermeture de items-tendes*/
+  }
+  .promo h2 {
+    position: absolute;
+    right: 0;
+    left: 0;
+    font-size: 2em;
+  }
+  .promo .garantie {
+    position: absolute;
+    top: 13%;
+    left: 62%;
+    width: 15%;
+  }
+  .promo .items-tendes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    /*cards de gauche*/
+    /*fermeture de tendese-wrapper*/
+    /*cards de droite*/
+    /*fermeture de icones*/
+  }
+  .promo .items-tendes .tendese-wrapper {
+    width: 70%;
+    margin-top: 75px;
+    /*fermeture de prix*/
+  }
+  .promo .items-tendes .tendese-wrapper .prix {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    position: relative;
+  }
+  .promo .items-tendes .tendese-wrapper .prix hr {
+    top: 41%;
+    width: 50%;
+  }
+  .promo .items-tendes .tendese-wrapper .prix h1 {
+    order: 1;
+    margin-left: 0;
+    font-size: 2em;
+  }
+  .promo .items-tendes .tendese-wrapper .prix h2 {
+    order: 2;
+    position: initial;
+  }
+  .promo .items-tendes .tendese-wrapper .prix h3 {
+    order: 3;
+    font-size: 2.5em;
+  }
+  .promo .items-tendes .tendese-wrapper img {
+    width: 100%;
+  }
+  .promo .items-tendes .icones {
+    display: block;
+    display: flex;
+    align-items: center;
+    /*fermeture de icones-items*/
+    /*fermeture de l'ul*/
+  }
+  .promo .items-tendes .icones .icones-items {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    gap: 20px;
+  }
+  .promo .items-tendes .icones .icones-items img {
+    display: flex;
+    padding-left: 2em;
+    width: 45%;
+    margin-top: 2em;
+    margin-right: 0;
+  }
+  .promo .items-tendes .icones ul {
+    color: #707070;
+    font-size: 1.5em;
+  }
+  .promo .items-tendes .icones ul li {
+    list-style: none;
+    margin-top: 2em;
+  }
+  .promo .btn {
+    background-color: #38d0ab;
+    font-size: 1.5em;
+    padding: 0.3em 4em;
+    color: white;
+    border-radius: 30em;
+    text-decoration: none;
+    position: absolute;
+    right: 150px;
+    bottom: 180px;
+  }
+  .promo .homme {
+    display: initial;
+    width: 50%;
+    margin-left: 50%;
+  }
+  .promo .pelouz {
+    display: none;
+  }
+
+  /*fermeture de promo*/
+  /*section carte de fidélité*/
+  .carte-wrapper {
+    width: 80%;
+    margin: auto;
+    position: relative;
+  }
+  .carte-wrapper p {
+    text-align: center;
+  }
+  .carte-wrapper .pourcentage div h1 {
+    text-align: center;
+  }
+  .carte-wrapper .toutes {
+    position: absolute;
+    right: 70px;
+    top: 180px;
+    width: 370px;
+  }
+  .carte-wrapper img {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+  .carte-wrapper .recomp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .carte-wrapper .grace {
+    display: block;
+  }
+  .carte-wrapper a {
+    padding: 0.5% 10%;
+    text-align: center;
+    width: 350px;
+  }
+
+  /*fermeture de carte-wrapper*/
+  /*section avantages d'avoir une carte*/
+  .fidelité h1 {
+    text-align: center;
+    margin-left: 0;
+  }
+  .fidelité li {
+    text-align: center;
+  }
+  .fidelité img {
+    display: block;
+    width: 80%;
+    margin: auto;
+    image-orientation: 90deg flip;
+  }
+
+  /*footer*/
+  footer {
+    padding-bottom: 3%;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .reseaux-socio {
+    position: initial;
+    order: 1;
+  }
+  footer .reseaux-socio a {
+    margin-right: 30px;
+  }
+  footer ul {
+    order: 2;
+  }
+  footer .contenu {
+    order: 3;
+  }
+  footer .desa {
+    order: 4;
+  }
+}/*# sourceMappingURL=desktop.css.map */
